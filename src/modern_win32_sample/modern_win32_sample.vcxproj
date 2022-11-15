@@ -83,12 +83,12 @@
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
-    <Import Project="..\packages\modern_win32_vc143_md.1.0.1\build\modern_win32_vc143_md.targets" Condition="Exists('..\packages\modern_win32_vc143_md.1.0.1\build\modern_win32_vc143_md.targets')" />
+    <Import Project="..\..\packages\modern_win32_vc143_md.1.0.1\build\modern_win32_vc143_md.targets" Condition="Exists('..\..\packages\modern_win32_vc143_md.1.0.1\build\modern_win32_vc143_md.targets')" />
   </ImportGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\modern_win32_vc143_md.1.0.1\build\modern_win32_vc143_md.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\modern_win32_vc143_md.1.0.1\build\modern_win32_vc143_md.targets'))" />
+    <Error Condition="!Exists('..\..\packages\modern_win32_vc143_md.1.0.1\build\modern_win32_vc143_md.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\modern_win32_vc143_md.1.0.1\build\modern_win32_vc143_md.targets'))" />
   </Target>
 </Project>
